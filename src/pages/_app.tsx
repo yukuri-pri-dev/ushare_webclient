@@ -6,6 +6,7 @@ import { Header } from "src/component/Header/Header";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider>
+      {/* あらゆるcomponent内で認証状態のチェックが可能 */}
       <AuthProvider>
         <Header />
         <Component {...pageProps} />
